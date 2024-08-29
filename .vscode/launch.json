@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BackendcajeroApplication<backendcajero>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cajero.backendcajero.BackendcajeroApplication",
+            "projectName": "backendcajero",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
