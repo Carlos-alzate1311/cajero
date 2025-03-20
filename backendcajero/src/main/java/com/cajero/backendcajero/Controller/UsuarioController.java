@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,7 +21,7 @@ public class UsuarioController {
     UsuarioService usuarioService;
     
     @PostMapping("/create")
-    public Usuario save(@RequestBody Usuario usuario){
+    public Usuario save( Usuario usuario){
         return usuarioService.save(usuario);
     }
 
@@ -28,4 +29,10 @@ public class UsuarioController {
     public List<Usuario> findAll(){
         return usuarioService.findAll();
     }
+
+    @PutMapping("/update")
+    public Usuario update(Usuario usuario){
+        return usuarioService.save(usuario);
+    }
+
 }
